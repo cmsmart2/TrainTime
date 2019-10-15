@@ -15,6 +15,58 @@
 <link rel="reset" href="./assets/css/reset.css">
 </head>
 <body>
+    <div class="jumbotron jumbotron-fluid bg-warning text-dark">
+        <div class="container text-center">
+            <h1 class="display-4 text-uppercase font-weight-bold">Train Time</h1>
+                <p class="lead">Choo Choo!</p>
+            </div>
+        </div>
+    <div class="card mx-auto w-75 p-1 m-3" style="width: 18rem;">
+        <div class="card-header">
+            Current Train Schedule
+            </div>
+        <ul class="list-group list-group-flush">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                <tbody id="table-body">         
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+    <div class="card mx-auto w-75 p-1 m-3" style="width: 18rem;">
+        <div class="card-header">
+            Add Your Own Train
+            </div>
+        <ul class="list-group list-group-flush">
+            <form>
+                <div class="form-group">
+                    <label>Train Name</label>
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                <div class="form-group">
+                    <label>Destination</label>
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                <div class="form-group">
+                    <label>First Train Time (HH:mm-military time)</label>
+                        <input type="number" class="form-control" placeholder="">
+                    </div>
+                <div class="form-group">
+                    <label>Frequency (min)</label>
+                        <input type="number" class="form-control" placeholder="">
+                    </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </ul>
+        </div>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Script -->
