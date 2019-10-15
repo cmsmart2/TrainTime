@@ -26,10 +26,10 @@
     event.preventDefault();
 
     // Grabbed values from text boxes
-    trainName = $("#trainName-here").val().trim();
-    destination = $("#destination-input").val().trim();
-    time = $("#time-input").val().trim();
-    frequency = $("#frequency-input").val().trim();
+    trainName = $("#trainName-here").val();
+    destination = $("#destination-here").val();
+    time = $("#time-here").val();
+    frequency = $("#frequency-here").val();
 
     // Code for handling the push
     database.ref().push({
