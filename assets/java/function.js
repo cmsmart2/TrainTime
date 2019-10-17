@@ -54,6 +54,14 @@
     console.log(sv.frequency);
 
     // Change the HTML to reflect
+   var row = $('<tr>');
+   row.addClass('row-here')
+   $('.row-here').append('<td>' + sv.trainName +'</td>');
+   $('.row-here').append('<td>' + sv.destination +'</td>');
+   $('.row-here').append('<td>' + sv.frequency +'</td>');
+   $('#table-body').append(row);
+   
+
    
 
     // Handle the errors
