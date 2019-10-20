@@ -1,0 +1,9 @@
+h1, p, .card-header {
+    font-family: 'Abril Fatface', cursive;
+}
+body, .jumbotron, .card, input {
+    background: url(../images/train-photo-2.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
